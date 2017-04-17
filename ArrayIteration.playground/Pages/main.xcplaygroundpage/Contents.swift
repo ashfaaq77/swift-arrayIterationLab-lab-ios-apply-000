@@ -16,7 +16,7 @@
 // write your code here
 
 
-
+    var cart = ["Chips","Salsa", "Guacamole", "Red wine"]
 
 
 
@@ -25,7 +25,7 @@
  */
 // write your code here
 
-
+    var list = [1,2,3,4,5,6,7,8,9,10]
 
 
 
@@ -38,7 +38,9 @@
 
 
 
-
+    for li in list{
+        print(li);
+    }
 
 
 
@@ -49,7 +51,9 @@
 
 
 
-
+    for item in cart{
+        print(item)
+    }
 
 
 
@@ -59,8 +63,17 @@
 // write your code here
 
 
-
-
+    func greet(name:[String]){
+        
+        for n in name{
+            if(n == "Michael"){
+                print("Top of the morming \(n)")
+            }else{
+                print("Good morning \(n)")
+            }
+        }
+        
+    }
 
 
 /*: question6
@@ -68,7 +81,19 @@
  */
 // write your code here
 
-
+    func intArray(integer:[Int])->[Int]{
+        
+        var sec:[Int] = []
+        
+        for n in integer{
+            
+            if (n<50) {
+                sec.append(n)
+            }
+            
+        }
+        return sec
+    }
 
 
 //: Here is a [link](https://github.com/learn-co-curriculum/swift-arrayIterationLab-lab/blob/solution/ArrayIteration.playground/Pages/main.xcplaygroundpage/Contents.swift) to the solution.
